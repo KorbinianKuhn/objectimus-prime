@@ -1,0 +1,34 @@
+{
+  "name": "@korbiniankuhn/objectimus-prime",
+  "version": "0.0.0",
+  "description": "Easy javascript object parsing.",
+  "main": "src.js",
+  "scripts": {
+    "test": "mocha \"./**/*.spec.js\"",
+    "coverage": "nyc --reporter=html mocha \"./test/**/*.spec.js\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KorbinianKuhn/objectimus-prime.git"
+  },
+  "keywords": [
+    "object",
+    "parser",
+    "json",
+    "transform"
+  ],
+  "author": "Korbinian Kuhn",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/KorbinianKuhn/objectimus-prime/issues"
+  },
+  "homepage": "https://github.com/KorbinianKuhn/objectimus-prime#readme",
+  "devDependencies": {
+    "mocha": "^4.1.0",
+    "nyc": "^11.4.1",
+    "should": "^13.2.0"
+  },
+  "dependencies": {
+    "lodash": "^4.17.4"
+  }
+}
