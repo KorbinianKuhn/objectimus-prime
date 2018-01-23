@@ -5,7 +5,8 @@
   "main": "src.js",
   "scripts": {
     "test": "mocha \"./**/*.spec.js\"",
-    "coverage": "nyc --reporter=html mocha \"./test/**/*.spec.js\""
+    "coverage": "nyc --reporter=html mocha \"./test/**/*.spec.js\"",
+    "nyc": "nyc npm test && nyc report --reporter=text-lcov | coveralls"
   },
   "repository": {
     "type": "git",
@@ -24,6 +25,7 @@
   },
   "homepage": "https://github.com/KorbinianKuhn/objectimus-prime#readme",
   "devDependencies": {
+    "coveralls": "^3.0.0",
     "mocha": "^4.1.0",
     "nyc": "^11.4.1",
     "should": "^13.2.0"
