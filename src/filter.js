@@ -7,6 +7,13 @@ const filter = (data, keys) => {
     return filterObject(data, keys);
   }
 }
+exports.filter = filter;
+
+const valueFilter = (data, path, keys) => {
+  _.set(data, path, filter(_.get(data, path), keys));
+}
+exports.valueFilter = valueFilter;
+
 const filterArray = (data, keys) => {
   const filtered = [];
   data.map(o => {
@@ -21,5 +28,3 @@ const filterObject = (data, keys) => {
   });
   return filtered;
 }
-
-module.exports = filter;

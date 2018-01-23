@@ -20,10 +20,10 @@ const removeObject = (data, keys) => {
   });
 }
 
-const vremove = (data, path, keys) => {
+const valueRemove = (data, path, keys) => {
   remove(_.get(data, path), keys);
 }
-exports.vremove = vremove;
+exports.valueRemove = valueRemove;
 
 const deepRemove = (data, keys) => {
   if (_.isArray(data)) {

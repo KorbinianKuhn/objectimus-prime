@@ -14,11 +14,14 @@ class Formatter {
         case 'filter':
           data = functions.filter(data, operation[1]);
           break;
+        case 'valueFilter':
+          functions.valueFilter(data, operation[1], operation[2]);
+          break;
         case 'remove':
           functions.remove(data, operation[1]);
           break;
-        case 'vremove':
-          functions.vremove(data, operation[1], operation[2]);
+        case 'valueRemove':
+          functions.valueRemove(data, operation[1], operation[2]);
           break;
         case 'deepRemove':
           functions.deepRemove(data, operation[1]);
@@ -50,14 +53,18 @@ class Formatter {
     this[_operations].push(['filter', keys]);
     return this;
   }
+  valueFilter(path, ...keys) {
+    this[_operations].push(['valueFilter', path, keys]);
+    return this;
+  }
 
   remove(...keys) {
     this[_operations].push(['remove', keys]);
     return this;
   }
 
-  vremove(path, ...keys) {
-    this[_operations].push(['vremove', path, keys]);
+  valueRemove(path, ...keys) {
+    this[_operations].push(['valueRemove', path, keys]);
     return this;
   }
 

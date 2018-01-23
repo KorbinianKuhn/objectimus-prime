@@ -1,10 +1,15 @@
 # Objectimus Prime
 
-[![Travis](https://img.shields.io/travis/KorbinianKuhn/objectimus-prime.svg)](https://travis-ci.org/KorbinianKuhn/objectimus-prime/builds) [![Coverage Status](https://coveralls.io/repos/github/KorbinianKuhn/objectimus-prime/badge.svg?branch=master)](https://coveralls.io/github/KorbinianKuhn/objectimus-prime?branch=master) [![dependencies](https://david-dm.org/KorbinianKuhn/objectimus-prime.svg)]() [![standard](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](http://standardjs.com/) [![license](https://img.shields.io/github/license/mashape/apistatus.svg)]()
+[![Travis](https://img.shields.io/travis/KorbinianKuhn/objectimus-prime.svg)](https://travis-ci.org/KorbinianKuhn/objectimus-prime/builds)
+[![Coverage Status](https://coveralls.io/repos/github/KorbinianKuhn/objectimus-prime/badge.svg?branch=master)](https://coveralls.io/github/KorbinianKuhn/objectimus-prime?branch=master)
+[![Known Vulnerabilities](https://snyk.io/test/github/KorbinianKuhn/objectimus-prime/badge.svg)](https://snyk.io/test/github/KorbinianKuhn/objectimus-prime) 
+[![dependencies](https://david-dm.org/KorbinianKuhn/objectimus-prime.svg)]()
+[![npm](https://img.shields.io/npm/dt/@korbiniankuhn/objectimus-prime.svg)](https://www.npmjs.com/package/@korbiniankuhn/objectimus-prime)
+[![license](https://img.shields.io/github/license/mashape/apistatus.svg)]()
 
 Objectimus Prime is the chief transformer for parsing javascript objects e.g. transforming data before sending the response of an REST API. Depending on your needs you can blacklist (`remove`) or whitelist (`filter`) keys, perform math operations (`round`, `floor`, `ceil`), `rename` or `copy` keys or call custom functions...
 
-The lib tries to detect if you operate on objects or arrays automatically. To transform the values of a key it provides some special functions prefixed with `v` e.g. `vremove`, `vfilter`.
+The lib tries to detect if you operate on objects or arrays automatically. To transform the values of a key it provides special functions e.g. `valueRemove`, `valueFilter`.
 
 The keys are always defined as paths and can access nested objects by dot separation `deep.deeper.evendeeper`.
 
@@ -70,7 +75,7 @@ objectimus().remove('_id', 'age').data(array);
 // [{ name: 'Jane Doe' }]
 ```
 
-### `vremove(path, ...keys)`
+### `valueRemove(path, ...keys)`
 
 ### `deepRemove(...keys)`
 
@@ -95,6 +100,8 @@ const array = [{
 objectimus().filter('name').data(array);
 // [{ name: 'Jane Doe' }]
 ```
+
+### `valueFilter(path, ...keys)`
 
 ### `rename(key, target)`
 

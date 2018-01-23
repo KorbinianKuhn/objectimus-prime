@@ -1,6 +1,7 @@
-exports.filter = require('./filter');
+exports.filter = require('./filter').filter;
+exports.valueFilter = require('./filter').valueFilter;
 exports.remove = require('./remove').remove;
-exports.vremove = require('./remove').vremove;
+exports.valueRemove = require('./remove').valueRemove;
 exports.deepRemove = require('./remove').deepRemove;
 exports.round = require('./round');
 exports.ceil = require('./ceil');

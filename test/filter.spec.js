@@ -21,4 +21,18 @@ describe('filter()', () => {
       keep: true
     }]);
   });
+
+  it('filter keys from a value of an object', () => {
+    const result = formatter().valueFilter('path', 'keep').data({
+      path: {
+        delete: 'test',
+        keep: 'test'
+      }
+    });
+    result.should.deepEqual({
+      path: {
+        keep: 'test'
+      }
+    });
+  });
 });

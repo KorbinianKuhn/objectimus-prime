@@ -25,7 +25,7 @@ describe('formatter()', () => {
         name: 'cooking'
       }]
     }
-    const actual = formatter().vremove('hobbies', '_id').data(data);
+    const actual = formatter().valueRemove('hobbies', '_id').data(data);
     actual.should.deepEqual(expected);
   });
 });
