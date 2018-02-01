@@ -77,7 +77,32 @@ objectimus().remove('_id', 'age').data(array);
 
 ### `valueRemove(path, ...keys)`
 
+``` javascript
+const object = {
+  parent: {
+    _id: 1,
+    age: 25,
+    name: 'Jane Doe'
+  }
+};
+objectimus().valueRemove('parent', '_id', 'age').data(object);
+// { parent: { name: 'Jane Doe' } }
+```
+
 ### `deepRemove(...keys)`
+
+``` javascript
+const object = {
+  _id: 1,
+  age: 25,
+  name: 'Jane Doe',
+  parent: {
+    _id: 2
+  }
+};
+objectimus().deepRemove('_id', 'age').data(object);
+// { parent: { name: 'Jane Doe', parent: {} } }
+```
 
 ### `filter(...keys)`
 
@@ -102,6 +127,18 @@ objectimus().filter('name').data(array);
 ```
 
 ### `valueFilter(path, ...keys)`
+
+``` javascript
+const object = {
+  parent: {
+    _id: 1,
+    age: 25,
+    name: 'Jane Doe'
+  }
+};
+objectimus().valueFilter('parent', 'name', 'age').data(object);
+// { parent: { name: 'Jane Doe', age: '25' } }
+```
 
 ### `rename(key, target)`
 
