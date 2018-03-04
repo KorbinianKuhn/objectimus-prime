@@ -1,5 +1,7 @@
 # Objectimus Prime
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/KorbinianKuhn/objectimus-prime.svg)](https://greenkeeper.io/)
+
 [![Travis](https://img.shields.io/travis/KorbinianKuhn/objectimus-prime.svg)](https://travis-ci.org/KorbinianKuhn/objectimus-prime/builds)
 [![Coverage Status](https://coveralls.io/repos/github/KorbinianKuhn/objectimus-prime/badge.svg?branch=master)](https://coveralls.io/github/KorbinianKuhn/objectimus-prime?branch=master)
 [![Known Vulnerabilities](https://snyk.io/test/github/KorbinianKuhn/objectimus-prime/badge.svg)](https://snyk.io/test/github/KorbinianKuhn/objectimus-prime) 
