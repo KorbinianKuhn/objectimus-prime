@@ -9,3 +9,4 @@ exports.floor = require('./floor');
 exports.rename = require('./rename');
 exports.copy = require('./copy');
 exports.sign = require('./sign');
+exports.date = require('./date').date;

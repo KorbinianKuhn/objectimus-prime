@@ -44,6 +44,9 @@ class Formatter {
         case 'copy':
           functions.copy(data, operation[1], operation[2]);
           break;
+        case 'date':
+          functions.date(data, operation[1], operation[2]);
+          break;
       }
     }
     return data;
@@ -100,6 +103,11 @@ class Formatter {
 
   sign(...keys) {
     this[_operations].push(['sign', keys]);
+    return this;
+  }
+
+  date(format, ...keys) {
+    this[_operations].push(['date', keys, format]);
     return this;
   }
 
