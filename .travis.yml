@@ -4,18 +4,16 @@ node_js:
   - 7
   - 8
   - 9
+  - 10
 
 before_install:
-- '[[ $(node -v) =~ ^v9.*$ ]] || npm install -g npm@latest'
-- npm install -g greenkeeper-lockfile@1
+  - "[[ $(node -v) =~ ^v9.*$ ]] || npm install -g npm@latest"
 
 before_script:
-- greenkeeper-lockfile-update
-- npm install
+  - npm install
 
 script:
-- npm run coveralls
+  - npm run coveralls
 
-after_script: 
-- greenkeeper-lockfile-upload
-- "cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js"
+after_script:
+  - "cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js"

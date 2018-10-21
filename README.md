@@ -7,7 +7,6 @@
 [![Dev Dependencies](https://img.shields.io/david/dev/KorbinianKuhn/objectimus-prime.svg?style=flat-square)](https://david-dm.org/KorbinianKuhn/objectimus-prime)
 [![npm](https://img.shields.io/npm/dt/@korbiniankuhn/objectimus-prime.svg?style=flat-square)](https://www.npmjs.com/package/@korbiniankuhn/objectimus-prime)
 [![npm-version](https://img.shields.io/npm/v/@korbiniankuhn/objectimus-prime.svg?style=flat-square)](https://www.npmjs.com/package/@korbiniankuhn/objectimus-prime)
-[![Greenkeeper badge](https://badges.greenkeeper.io/KorbinianKuhn/objectimus-prime.svg?style=flat-square)](https://greenkeeper.io/)
 ![license](https://img.shields.io/github/license/KorbinianKuhn/objectimus-prime.svg?style=flat-square)
 
 Objectimus Prime is the chief transformer for parsing javascript objects e.g. transforming data before sending the response of an REST API. Depending on your needs you can blacklist (`remove`) or whitelist (`filter`) keys, perform math operations (`round`, `floor`, `ceil`), `rename` or `copy` keys or call custom functions...
