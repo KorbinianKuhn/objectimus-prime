@@ -1,6 +1,6 @@
 {
   "name": "@korbiniankuhn/objectimus-prime",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Easy javascript object parsing.",
   "main": "src.js",
   "scripts": {
