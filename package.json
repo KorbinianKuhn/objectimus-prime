@@ -25,13 +25,13 @@
   },
   "homepage": "https://github.com/KorbinianKuhn/objectimus-prime#readme",
   "devDependencies": {
-    "coveralls": "^3.0.2",
-    "mocha": "^5.2.0",
-    "nyc": "^13.1.0",
+    "coveralls": "^3.0.4",
+    "mocha": "^6.1.4",
+    "nyc": "^14.1.1",
     "should": "^13.2.3"
   },
   "dependencies": {
     "lodash": "^4.17.11",
-    "moment": "^2.22.2"
+    "moment": "^2.24.0"
   }
 }
